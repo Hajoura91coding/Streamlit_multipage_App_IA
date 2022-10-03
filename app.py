@@ -3,7 +3,9 @@ from fastbook import *
 from fastai.vision.widgets import *
 from fastcore.all import *
 from PIL import Image
-
+import pathlib
+path = platform.system()
+if path == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 
 st.title("Food analysis")
 st.write("A classifier model about good or not good food for health")
