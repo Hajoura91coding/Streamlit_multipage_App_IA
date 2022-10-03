@@ -3,7 +3,7 @@ from fastbook import *
 from fastai.vision.widgets import *
 from fastcore.all import *
 from PIL import Image
-
+from pathlib import Path
 
 st.title("Food analysis")
 st.write("A classifier model about good or not good food for health")
