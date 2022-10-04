@@ -5,6 +5,10 @@ from fastcore.all import *
 from PIL import Image
 from pathlib import Path
 
+plt = platform.system()
+if plt == 'Linux':
+    Path.WindowsPath = Path.PosixPath
+
 st.title("Food analysis")
 st.write("A classifier model about good or not good food for health")
 
@@ -14,8 +18,8 @@ class Predict:
 
 
     def __init__(self, filename):
-        path = Path()
-        self.learn_inf = load_learner(path/filename)
+        #path = Path()
+        self.learn_inf = load_learner(Path()/filename)
         self.img = self.get_image_from_upload()
         if self.img is not None:
             self.display_image()
