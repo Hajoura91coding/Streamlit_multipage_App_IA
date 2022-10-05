@@ -1,7 +1,7 @@
 # Streamlit_App_Image_classification
 Deep Learning Image Classification with Fastai
 
-I build this model during my training with Jeremy Howard, co-founder fastai :
+I build this model during my training with Jeremy Howard, co-founder of fastai :
 https://course.fast.ai
 
 Do you want to try ?
