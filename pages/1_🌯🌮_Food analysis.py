@@ -1,15 +1,23 @@
 import streamlit as st
+
+st.set_page_config(
+                    page_title="Food analysis",
+                    page_icon="🌯🌮",
+                    )
+
+
 from fastbook import *
 from fastai.vision.widgets import *
 from fastcore.all import *
 from PIL import Image
 import pathlib
 
+
+
 plt = platform.system()
 if plt == 'Linux':
     pathlib.WindowsPath = pathlib.PosixPath
 
-st.set_page_config(page_title="Food analysis", page_icon="🌯🌮🌭")
 st.markdown("Un modèle de classification d'images sur la bonne et la mauvaise nourriture pour la santé")
 st.sidebar.header("Food analysis Demo")
 
