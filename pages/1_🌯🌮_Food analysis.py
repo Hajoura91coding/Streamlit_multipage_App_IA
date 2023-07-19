@@ -17,7 +17,7 @@ import pathlib
 plt = platform.system()
 if plt == 'Linux':
     pathlib.WindowsPath = pathlib.PosixPath
-
+st.title("Food analysis 🌯🌮")
 st.markdown("Un modèle de classification d'images sur la bonne et la mauvaise nourriture pour la santé")
 st.sidebar.header("Food analysis Demo")
 

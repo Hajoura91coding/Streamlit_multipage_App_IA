@@ -6,7 +6,8 @@ st.set_page_config(
                     )
 
 import deepl
-
+st.title("Machine translation🆎")
+st.write("Traduisez en toute confiance ! :p ")
 def auto_translate():
 
     key = st.text_input("Entre ta clé deepl :")
@@ -17,7 +18,7 @@ def auto_translate():
      if texte :
          result = translator.translate_text(texte, target_lang="FR")
          st.write(result.text)
-    
+
 
 
 if __name__ == "__main__":
