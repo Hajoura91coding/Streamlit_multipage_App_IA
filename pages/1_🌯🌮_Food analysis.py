@@ -17,6 +17,7 @@ import pathlib
 plt = platform.system()
 if plt == 'Linux':
     pathlib.WindowsPath = pathlib.PosixPath
+
 st.title("Food analysis 🌯🌮")
 st.markdown("Un modèle de classification d'images sur la bonne et la mauvaise nourriture pour la santé")
 st.sidebar.header("Food analysis Demo")
@@ -48,12 +49,17 @@ class Predict:
 
     def predict(self):
 
-        if st.button('Classify') :
-            pred, pred_idx, probs = self.learn_inf.predict(self.img)
-            st.write(f'Prediction: {pred} with a probability of : {probs[pred_idx]:.04f}')
-        else:
-            st.write(f'Click the button to classify')
+        with st.spinner(text='En progression...'):
+            time.sleep(2)
+            if st.button('Classify') :
+                pred, pred_idx, probs = self.learn_inf.predict(self.img)
+                st.write(f'Prediction: {pred} with a probability of : {probs[pred_idx]:.04f}')
+                st.balloons()
+            else:
+                st.write(f'Click the button to classify')
+
 
 if __name__=='__main__':
     model = 'export.pkl'
+
     predictor = Predict(model)
