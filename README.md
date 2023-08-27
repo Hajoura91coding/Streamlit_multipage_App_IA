@@ -18,3 +18,6 @@ https://course.fast.ai
 DeepL est un service de traduction automatique en ligne de la société DeepL GmbH, lancé le 28 août 2017 par l'équipe de Linguee. Le service permet de traduire 29 langues.
 
 Il faut avoir au moins la version gratuite de deepl pour insérer la clé et accéder à l'API.
+
+
+ Lien du site :  https://multipageappia.streamlit.app/
