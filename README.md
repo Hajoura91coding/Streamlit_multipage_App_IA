@@ -19,5 +19,20 @@ DeepL est un service de traduction automatique en ligne de la société DeepL Gm
 
 Il faut avoir au moins la version gratuite de deepl pour insérer la clé et accéder à l'API.
 
+1- l'utilisateur fournit deux entrées: L'api token de Deepl et un prompt qui va être le texte que l'utilisateur voudra traduire
+
+2- L'appel de l'API fait par le server de Deepl et l'écriture du prompt vont générer automatiquement la traduction du texte.
+
+## 🤖 Chatbot avec comme modèle Llama2
+
+Cette page m'a été inspiré par cet article: https://blog.streamlit.io/how-to-build-a-llama-2-chatbot/
+plusieurs étapes :
+
+1- Obtenir un token de l'API Replicate
+2- Préparer l'environnement de code
+3- Construire l'application
+4- Préparer l'API
+5- Déployer l'application
+
 
  Lien du site :  https://multipageappia.streamlit.app/

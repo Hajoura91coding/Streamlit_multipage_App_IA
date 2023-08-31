@@ -9,3 +9,4 @@ scikit_learn
 azure-cognitiveservices-search-imagesearch
 sentencepiece
 Deepl
+replicate
